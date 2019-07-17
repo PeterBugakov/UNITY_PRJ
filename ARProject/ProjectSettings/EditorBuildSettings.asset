@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/SwipeMenu/Scenes/Classic Flow Scene.unity
+    guid: fd973865a855b4dceaadbe456bfb5a7a
+  - enabled: 1
+    path: Assets/SwipeMenu/Scenes/Character Selection Example Scene.unity
+    guid: 5d7a6890d0d10460bac0d3d1d9962afa
   m_configObjects: {}
