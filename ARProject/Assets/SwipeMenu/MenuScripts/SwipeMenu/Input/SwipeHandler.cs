@@ -31,12 +31,12 @@ namespace SwipeMenu
 		/// <summary>
 		/// The type of flick. Inertia scrolls kinematically, MoveOne moves the menu in the x direction by one for each flick.
 		/// </summary>
-		public FlickType flickType = FlickType.Inertia;
+		public FlickType flickType = FlickType.MoveOne; //Inertia
 
-		/// <summary>
-		/// Once a swipe or flick has finished this will move the menu closest to the centre, to the centre.
-		/// </summary>
-		public bool lockToClosest = true;
+        /// <summary>
+        /// Once a swipe or flick has finished this will move the menu closest to the centre, to the centre.
+        /// </summary>
+        public bool lockToClosest = true;
 
         /// <summary>
         /// Limits the maximum force applied when swiping.
@@ -119,7 +119,7 @@ namespace SwipeMenu
 						finalPosition = endpos - startpos;
 						length = finalPosition.x < 0 ? -(finalPosition.magnitude * Time.deltaTime) : (finalPosition.magnitude * Time.deltaTime);
 
-						length *= .05f; //.35
+						length *= .35f; //.35
 
 						var force = length / (Time.time - startTime);
 
