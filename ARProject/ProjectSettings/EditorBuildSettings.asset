@@ -9,24 +9,6 @@ EditorBuildSettings:
     path: Assets/SwipeMenu/Scenes/MainMenu.unity
     guid: fd973865a855b4dceaadbe456bfb5a7a
   - enabled: 1
-    path: Assets/MapScenes/Scene1.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/MapScenes/Scene2.unity
-    guid: eb03fbada21bde94cb21a0778a1160f8
-  - enabled: 1
-    path: Assets/MapScenes/Scene3.unity
-    guid: e8b92d654a790e84d9c5b35e5068fb4c
-  - enabled: 1
-    path: Assets/MapScenes/Scene4.unity
-    guid: ce27023f49983b445a084f4553208858
-  - enabled: 1
-    path: Assets/MapScenes/Scene5.unity
-    guid: fe4df13bde6c8954d947ac3c1f5aad46
-  - enabled: 1
-    path: Assets/MapScenes/Scene6.unity
-    guid: 55e2aa18ecd5fe14cae17741bcf61822
-  - enabled: 1
-    path: Assets/Scenes/ARScene.unity
+    path: Assets/MapScenes/ARScene.unity
     guid: 4220b7abe0f642241b0a92daca733ba4
   m_configObjects: {}

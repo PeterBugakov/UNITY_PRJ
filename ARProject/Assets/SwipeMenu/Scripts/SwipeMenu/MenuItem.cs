@@ -24,12 +24,12 @@ namespace SwipeMenu
         {
             switch (MenuItem)
             {
-                case 1: SceneManager.LoadScene("Scene1"); break;
-                case 2: SceneManager.LoadScene("Scene2"); break;
-                case 3: SceneManager.LoadScene("Scene3"); break;
-                case 4: SceneManager.LoadScene("Scene4"); break;
-                case 5: SceneManager.LoadScene("Scene5"); break;
-                case 6: SceneManager.LoadScene("Scene6"); break;
+                case 1: SceneManager.LoadScene("ARScene"); break;
+                case 2: SceneManager.LoadScene("ARScene"); break;
+                case 3: SceneManager.LoadScene("ARScene"); break;
+                case 4: SceneManager.LoadScene("ARScene"); break;
+                case 5: SceneManager.LoadScene("ARScene"); break;
+                case 6: SceneManager.LoadScene("ARScene"); break;
             }
         }
     }
