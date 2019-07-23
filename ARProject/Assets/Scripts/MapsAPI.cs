@@ -134,6 +134,7 @@ public class MapsAPI : MonoBehaviour
             Material hz = Resources.Load("Materials/hz", typeof(Material)) as Material;
             foreach (Transform t in ts)
             {
+                Color obj_type_color;
                 if (t.gameObject.name == "Caption")
                 {
                     t.gameObject.GetComponent<Text>().text = jsonvale["results"][i]["name"].ToString();
@@ -166,6 +167,40 @@ public class MapsAPI : MonoBehaviour
                         GameObject.Find("Status").GetComponent<Renderer>().material = hz;
                         GameObject.Find("StatusText").GetComponent<Text>().text = "Нет данных";
                     }
+                }
+                if (t.gameObject.name == "Image")
+                {
+                    //Debug.Log(jsonvale["results"][i]["types"][1].ToString());
+                    try
+                    {
+                        switch (jsonvale["results"][i]["types"][1].ToString())
+                        {
+                            case "political":
+                                obj_type_color = Color.grey;
+                                break;
+                            case "establishment":
+                                obj_type_color = Color.blue;
+                                break;
+                            case "store":
+                                obj_type_color = Color.green;
+                                break;
+                            case "atm":
+                                obj_type_color = Color.yellow;
+                                break;
+                            case "bank":
+                                obj_type_color = Color.yellow;
+                                break;
+                            default:
+                                obj_type_color = Color.magenta;
+                                break;
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+
+                    //    //t.gameObject.GetComponent<Renderer>().material.color = obj_type_color;
                 }
             };
         }
