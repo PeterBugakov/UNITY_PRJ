@@ -54,7 +54,7 @@ public class MapsAPI : MonoBehaviour
         }
         Input.location.Stop();
         texterror.GetComponent<Text>().text = lan.ToString() + "," + lon.ToString();
-        string url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + lan.ToString() + "," + lon.ToString() + "&radius=1000&" + param + "&key=AIzaSyBdHiBxdXr5M-DKeAP494aTcEUa9imgrPw";
+        string url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + lan.ToString() + "," + lon.ToString() + "&radius=500&" + param + "&key=AIzaSyBdHiBxdXr5M-DKeAP494aTcEUa9imgrPw";
         //string url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=59.931167,30.360708&radius=500&" +param+"&key=AIzaSyBdHiBxdXr5M-DKeAP494aTcEUa9imgrPw";
         WWW www = new WWW(url);
         yield return www;
@@ -194,13 +194,14 @@ public class MapsAPI : MonoBehaviour
                                 obj_type_color = Color.magenta;
                                 break;
                         }
+                        t.gameObject.GetComponent<Image>().color = obj_type_color;
                     }
                     catch
                     {
 
                     }
 
-                    //    //t.gameObject.GetComponent<Renderer>().material.color = obj_type_color;
+                    
                 }
             };
         }
