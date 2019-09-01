@@ -19,7 +19,7 @@ using SwipeMenu;
             if (Mname == "Hotels") Mname = "гостиницы";
             if (Mname == "Places") Mname = "достопримечательности";
             if (Mname == "Routes") Mname = "пешеходные маршруты";
-            if (Mname == "Museums") Mname = "культура";
+            if (Mname == "Culture") Mname = "культура";
             txt.text = Mname;
         }
     }
