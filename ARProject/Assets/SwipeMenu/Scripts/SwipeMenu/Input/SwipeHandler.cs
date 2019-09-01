@@ -96,7 +96,7 @@ namespace SwipeMenu
 
 						var l = f.x < 0 ? (f.magnitude * Time.deltaTime) : -(f.magnitude * Time.deltaTime);
 					
-						l *= .2f;
+						l *= .1f;
 
 						Menu.instance.Constant (l);
 					}
@@ -159,7 +159,7 @@ namespace SwipeMenu
 				endpos = new Vector3 (touchPosition.x, 0, touchPosition.y);
 				finalPosition = endpos - startpos;
 				length = finalPosition.x < 0 ? (finalPosition.magnitude * Time.deltaTime) : -(finalPosition.magnitude * Time.deltaTime);
-				length *= .5f;
+				length *= .1f;
 
 				force = length / (Time.time - startTime);
 

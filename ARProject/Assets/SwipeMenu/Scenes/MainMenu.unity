@@ -989,11 +989,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handleSwipes: 1
-  handleFlicks: 1
-  requiredForceForFlick: 10
+  handleFlicks: 0
+  requiredForceForFlick: 3
   flickType: 1
   lockToClosest: 1
-  maxForce: 15
+  maxForce: 5
 --- !u!1 &596335627
 GameObject:
   m_ObjectHideFlags: 0
